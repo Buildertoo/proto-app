@@ -1,0 +1,132 @@
+.file-upload-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 3px dashed rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.file-upload-container.dragging {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.file-upload-container.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.auth-message {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.auth-message p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.file-upload-content {
+  margin-bottom: 20px;
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+.upload-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.upload-subtext {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.browse-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.browse-button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.browse-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.browse-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.file-selected {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 8px;
+}
+
+.file-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  word-break: break-all;
+}
+
+.file-size {
+  font-size: 0.9rem;
+  color: #666;
+}
